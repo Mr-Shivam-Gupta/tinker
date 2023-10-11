@@ -1,0 +1,100 @@
+
+.cmn--btn{
+    background: #c61a09;
+}
+
+.btn__grp a:nth-of-type(2n) {
+    color: #c61a09;
+    border-color: #c61a09;
+}
+
+.btn__grp a:nth-of-type(2n):hover{
+    background: #c61a09;
+}
+
+.btn--base, .page-item.active .page-link{
+    background: #c61a09 !important;
+}
+
+.page-item.active .page-link {
+    
+    border-color: #7376E7 !important;
+}
+
+.cmn--btn:not(button):hover {
+    color: #c61a09;
+    border-color: white;
+}
+
+.text--base{
+    color: #c61a09 ;
+}
+
+.change-language span, .feature__item-icon{
+    color: #c61a09;
+}
+
+.about__thumb .thumb::before {
+    background: #c61a091a;
+}
+
+.section__cate::before, .section__cate::after, .feature__item::before, .team__item:hover::after, .cmn--table thead, .post__item .post__date, .faq__item.open .faq__title .right--icon::before, .account__section-wrapper .account__section-content .section__header .section__title::after{
+    background-color: #c61a09;
+}
+
+.video-button::before, .video-button::after{
+    background-color: #c61a09 !important;
+}
+
+.section__cate, .about__item .icon, .pricing-feature span{
+    color: #c61a09;
+}
+
+.video-button {
+    background: #c61a09;
+}
+
+.feature__item-icon {
+    background: #c61a091a;
+}
+
+.team__item .team__thumb {
+    border: 4px solid #c61a09;
+}
+
+.team__item:hover .team__thumb {
+    box-shadow: 0 0 0 4px #c61a0933, 0 0 0 8px #c61a0933, 0 0 0 12px #c61a0933, 0 0 0 16px #c61a0933, 0 0 0 20px #c61a0933;
+}
+
+.nav--tabs li a.active {
+    color: #c61a09;
+    border-bottom: 2px solid #c61a09;
+}
+
+.post__item .post__content a {
+    background-image: linear-gradient(transparent calc(100% - 2px), #c61a09 2px);
+}
+
+.post__title a:hover, .ratings, .client__item-body .date, .faq__item.open .faq__title .title, .widget__post .widget__post__content span, .contact-area .contact-content .contact-content-botom .subtitle, .contact-area .contact-content .contact-content-botom .contact-info li .icon, .contact-area .contact-content .contact-content-botom .contact-info li .cont a, .footer-links li::after{
+    color: #c61a09;
+}
+
+.blog-sidebar {
+    border: 1px solid #c61a091a;
+}
+
+.form--control:focus {
+    border-color: #c61a0933;
+}
+
+.contact-area .form--control{
+    border-color: #c61a09ff;
+}
+
+.form-control:focus {
+    border-color: #c61a09;
+}
+
+.btn--title, .badge--title, .bg--title, .preloader, .pricing-deco{
+    background-color: #ed3419 !important;
+}
