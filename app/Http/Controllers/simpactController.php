@@ -4,9 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
+use Jenssegers\Agent\Agent;
+use Illuminate\Support\Facades\DB;
 use Laravel\Socialite\Facades\Socialite;
- use App\Models\User;
- use Jenssegers\Agent\Agent;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\MailSender;
+use Exception;
 
 
 class simpactController extends Controller
@@ -215,6 +219,13 @@ class simpactController extends Controller
 
       $agent = new Agent();
       $userAgent = $req->header('User-Agent');
+      $validation = $req->validate([
+         'name' => 'required',
+         'phone' => 'required|numeric',
+         'email' => 'required|email',
+         'subject' => 'required',
+         'message' => 'required',
+      ]);
 
      $formData = [
       'name' =>  $req->name,
@@ -226,8 +237,21 @@ class simpactController extends Controller
       'browser' =>  $browser = $agent->browser().' '.$agent->getBrowserVersion(),
       'submit_date' =>  $submissionDate = date('Y-m-d H:i:s'),
      ];
-     print_r($formData);
+
+     $query = DB:: table('contact_tbl')->insert($formData);
+     
+     $data = Mail::to('shivam.gupta.43620@gmail.com')->send(new MailSender($formData));
+     if($query){
+      //   $req->session()->flash('success', 'form submited successful!');
+        return redirect('contact')->with('success', 'form submited successful!');
+     }
+     else{
+      // $req->session()->flash('danger', 'Somthing went worng!,Please try again');
+      return redirect('contact')->with('danger', 'Somthing went worng!,Please try again');
+     }
    }
+
+
 
    public function googleLogin()
    {

@@ -1,14 +1,12 @@
 @extends('layouts.master')
 @section('content')
 
-<!-- Hero Section -->
 <section class="hero-section bg--title shapes-container">
    <div class="container">
       <h1 class="hero-title">Contact</h1>
    </div>
 </section>
-<!-- Hero Section -->
-<!-- Contact -->
+
 <section class="contact-section pt-120 pb-120 pb-lg-0">
     <div class="container">
        <div class="contact-area">
@@ -54,40 +52,66 @@
              </div>
           </div>
           <div class="contact-wrapper bg--section">
-             <div class="section__header">
-                <h3 class="section__title">Drop Us a Line</h3>
-             </div>
+          <div class="section__header">
+            <h3 class="section__title">Drop Us a Line</h3>
+                 @if(session('success'))
+                      <div class="alert alert-success">
+                        {{ session('success') }}
+                     </div>
+                  @endif
+                   @if(session('danger'))
+                     <div class="alert alert-danger">
+                        {{ session('danger') }}
+                     </div>
+                  @endif
+         </div>
              <form class="contact-form" method="post" action="{{url('contact-form')}}">
                @csrf
                 <div class="row">
                    <div class="col-sm-12">
                       <div class="form-group">
+                      @error('name')
+                           <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
                          <label for="name" class="form--label text--title">Full Name <span class="text-danger">(*)</span></label>
-                         <input type="text" name="name" value="text-name" class="form-control form--control" placeholder="Your Full Name" id="name" required>
+                         <input type="text" name="name" value="" class="form-control form--control" placeholder="Your Full Name" id="name" required>
                       </div>
                    </div>
                    <div class="col-sm-12">
                       <div class="form-group">
+                         @error('phone')
+                           <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
                          <label for="phone" class="form--label text--title">Phone <span class="text-danger">(*)</span></label>
-                         <input type="tel" name="phone" placeholder="Enter 10-digit Mobile number" value="987654321" id="phone" required class="form-control form--control">
+                         <input type="tel" name="phone" pattern="[6-9][0-9]{9}" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Enter 10-digit Mobile number" value="" maxlength="10" minlength="10" id="phone" required class="form-control form--control">
                       </div>
                    </div>
                    <div class="col-sm-12">
                       <div class="form-group">
+                      @error('email')
+                           <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
                          <label for="email" class="form--label text--title">Email <span class="text-danger">(*)</span></label>
-                         <input type="email" name="email"  value="text.@email.com" id="email" placeholder="Enter E-Mail Address" required class="form-control form--control">
+                         <input type="email" name="email"  value="" id="email" placeholder="Enter E-Mail Address" required class="form-control form--control">
                       </div>
                    </div>
+
                    <div class="col-sm-12">
                       <div class="form-group">
+                      @error('subject')
+                           <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
                          <label for="subject" class="form--label text--title">Subject <span class="text-danger">(*)</span></label>
-                         <input type="text" name="subject" placeholder="Write your subject" value="text-subject" id="subject" required class="form-control form--control">
+                         <input type="text" name="subject" placeholder="Write your subject" value=" " id="subject" required class="form-control form--control">
                       </div>
                    </div>
                    <div class="col-sm-12">
                       <div class="form-group">
+                      @error('message')
+                           <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
                          <label for="message" class="form--label text--title">Message <span class="text-danger">(*)</span></label>
-                         <textarea name="message" id="message" class="form-control form--control" placeholder="Write your message">text-message</textarea>
+                         <textarea name="message" id="message" rows="2" class="form-control form--control" placeholder="Write your message"></textarea>
                       </div>
                    </div>
                    
@@ -100,6 +124,6 @@
        </div>
     </div>
  </section>
- <!-- Contact -->
+
 
 @endsection
