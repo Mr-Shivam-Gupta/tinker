@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('contact_tbl', function (Blueprint $table) {
             $table->id();
-        $table->string('name', 50)->collation('latin1_swedish_ci');
-        $table->string('email', 50)->collation('latin1_swedish_ci');
-        $table->string('phone', 50)->collation('latin1_swedish_ci');
-        $table->string('subject', 50)->collation('latin1_swedish_ci');
-        $table->string('message', 50)->collation('latin1_swedish_ci');
-        $table->string('ip_address', 50)->nullable()->default(null)->collation('latin1_swedish_ci');
-        $table->string('browser', 50)->collation('latin1_swedish_ci');
+        $table->string('name', 50);
+        $table->string('email', 50);
+        $table->string('phone', 50);
+        $table->string('subject', 50);
+        $table->string('message', 50);
+        $table->string('ip_address', 50)->nullable()->default(null);
+        $table->string('browser', 50);
         $table->timestamps();
         });
     }

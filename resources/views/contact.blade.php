@@ -81,7 +81,7 @@
                       <div class="form-group">
                          @error('phone')
                            <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror
+                        @enderror   
                          <label for="phone" class="form--label text--title">Phone <span class="text-danger">(*)</span></label>
                          <input type="tel" name="phone" pattern="[6-9][0-9]{9}" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Enter 10-digit Mobile number" value="" maxlength="10" minlength="10" id="phone" required class="form-control form--control">
                       </div>

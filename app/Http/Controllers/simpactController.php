@@ -10,9 +10,10 @@ use Illuminate\Support\Facades\DB;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\MailSender;
-use Exception;
-
-
+// use Exception;
+// use PhpParser\Node\Stmt\Return_;
+use Illuminate\Support\Facades\Session; 
+ use Illuminate\Support\Facades\Auth;
 class simpactController extends Controller
 {
     public function index()
@@ -239,19 +240,50 @@ class simpactController extends Controller
      ];
 
      $query = DB:: table('contact_tbl')->insert($formData);
-     
-     $data = Mail::to('shivam.gupta.43620@gmail.com')->send(new MailSender($formData));
+   //   $data = Mail::to('shivam.gupta.43620@gmail.com')->send(new MailSender($formData));
      if($query){
-      //   $req->session()->flash('success', 'form submited successful!');
         return redirect('contact')->with('success', 'form submited successful!');
      }
      else{
-      // $req->session()->flash('danger', 'Somthing went worng!,Please try again');
       return redirect('contact')->with('danger', 'Somthing went worng!,Please try again');
      }
    }
 
+   public function registerForm(Request $req){
+      $agent = new Agent();
+      
+      $validation = $req->validate([
+         'name' => 'required',
+         'phone' => 'required|numeric',
+         'email' => 'required|email',
+         'subject' => 'required',
+         'message' => 'required',
+      ]);
 
+     $formData = [
+      'name' =>  $req->name,
+      'email' =>  $req->email,
+      'phone' =>  $req->phone,
+      'subject' =>  $req->subject,
+      'message' =>  $req->message,
+      'ip_address' =>  $ipAddress = $req->ip(),
+      'browser' =>  $browser = $agent->browser().' '.$agent->getBrowserVersion(),
+      'submit_date' =>  $submissionDate = date('Y-m-d H:i:s'),
+     ];
+
+     echo  $req->name;
+     echo  $req->username;
+     echo  $req->pass;
+   }
+
+
+
+   public function logout(){
+
+      Session::flush();
+      Auth::logout(); 
+    return redirect('/');
+   }
 
    public function googleLogin()
    {

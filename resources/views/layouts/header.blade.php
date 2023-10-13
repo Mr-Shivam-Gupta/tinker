@@ -55,8 +55,8 @@
              <div class="change-language me-3 me-lg-0">
                 <div class="sign-in-up d-none d-sm-block">
                    <span><i class="fas la-user text-danger"></i></span>
-                   <a href="{{url('login')}}">Sign In</a>
-                   <a href="{{url('register')}}">Sign Up</a>
+                   <a href="{{url('login')}}">LogIn</a>
+                   <a href="{{url('register')}}">Registration</a>
                 </div>
              </div>
              <div class="header-bar d-lg-none">
