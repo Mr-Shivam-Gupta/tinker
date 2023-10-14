@@ -15,9 +15,9 @@
          <div class="col-lg-6 col-md-10">
             <div class="section__header text-center">
                <span class="section__cate">Pricing Plan</span>
-               <h3 class="section__title">Our Pricing Plan</h3>
+               <h3 class="section__title">Our Pricing Structure</h3>
                <p>
-                  Necessitatibus sapiente ex earum omnis, commodi doloribus! Iste corrupti error maiores inventore.
+               We offer competitive pricing plans designed to meet your needs. Our commitment is to provide value and quality.
                </p>
             </div>
          </div>
@@ -185,9 +185,9 @@
          <div class="col-lg-6 col-md-10">
             <div class="section__header text-center">
                <span class="section__cate">Easy Payment</span>
-               <h3 class="section__title">Our Payment System For You</h3>
+               <h3 class="section__title">Our Custom Payment System</h3>
                <p>
-                  Necessitatibus sapiente ex earum omnis, commodi doloribus! Iste corrupti error maiores inventore.
+               Discover the convenience and flexibility of our tailored payment system designed with you in mind.
                </p>
             </div>
          </div>
@@ -238,5 +238,4 @@
       </div>
    </div>
 </section>
-<!-- Payment Gateways Section -->
 @endsection

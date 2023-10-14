@@ -14,10 +14,8 @@
          <div class="col-lg-6 col-md-10">
             <div class="section__header text-center">
                <span class="section__cate">FAQs</span>
-               <h3 class="section__title">Frequently Asked Questions</h3>
-               <p>
-                 Find your solution for every problems related to MLM. Primary queries that everyone always asked.
-               </p>
+               <h3 class="section__title">Commonly Asked Questions</h3>
+<p>Explore solutions for various MLM-related issues. These are the typical queries that individuals often raise.</p>
             </div>
          </div>
       </div>

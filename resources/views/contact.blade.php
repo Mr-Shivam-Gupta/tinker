@@ -12,10 +12,8 @@
        <div class="contact-area">
           <div class="contact-content">
              <div class="section__header">
-                <h3 class="section__title">Get In Touch With Us</h3>
-                <p>
-                   We are here for you always! please fill up the information and feel free ask if you have any query.
-                </p>
+             <h3 class="section__title">Contact Us</h3>
+<p>We're available to assist you at all times! Please complete the information and don't hesitate to ask if you have any questions.</p>
              </div>
              <div class="contact-content-botom">
                 <h5 class="subtitle">More Information</h5>
