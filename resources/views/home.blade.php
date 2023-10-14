@@ -111,11 +111,11 @@
                <div class="about-content">
                   <div class="section__header">
                      <span class="section__cate">About Us</span>
-                     <h3 class="section__title">15 Years Of Your Trust</h3>
-                     <p>
-                     <div style="text-align:justify;">
-                        <div>We are not just an online version of any Business market, but also, the reflection of each and every MLM business. We are an international financial company engaged in investment activities, which are related to MLM on financial markets by qualified professional traders.</div>
-                     </div>
+                     <h3 class="section__title">15 Years of Trust</h3>
+<p>
+<div style="text-align:justify;">
+<div>We are more than just an online representation of a business market; we are a reflection of the entire MLM industry. Our international financial company is actively involved in investment activities connected to MLM within the financial markets, led by qualified professional traders.</div>
+</div>
                      <blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote>
                      <blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote>
                      <blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote>
@@ -129,7 +129,7 @@
                               <i class="las la-gem"></i>                                        
                            </div>
                            <div class="info">
-                              <h6 class="subtitle">Best Platform with 1000+ happy clients</h6>
+                           <h6 class="subtitle">Premier Platform with Over 1000+ Satisfied Clients</h6>
                            </div>
                         </div>
                      </div>
@@ -139,7 +139,7 @@
                               <i class="las la-chart-line"></i>                                        
                            </div>
                            <div class="info">
-                              <h6 class="subtitle">We will grow your business in whole world</h6>
+                           <h6 class="subtitle">Expanding Your Business Worldwide</h6>
                            </div>
                         </div>
                      </div>
@@ -149,7 +149,7 @@
                               <i class="las la-award"></i>                                        
                            </div>
                            <div class="info">
-                              <h6 class="subtitle">We will 100% money back guarantee in 30 days</h6>
+                           <h6 class="subtitle">We Offer a Full 100% Money-Back Guarantee Within 30 Days</h6>
                            </div>
                         </div>
                      </div>
@@ -159,7 +159,7 @@
                               <i class="las la-headphones-alt"></i>                                        
                            </div>
                            <div class="info">
-                              <h6 class="subtitle">We have a strong customer support in 24/7 days</h6>
+                           <h6 class="subtitle">Our Customer Support is Available 24/7</h6>
                            </div>
                         </div>
                      </div>
@@ -180,10 +180,11 @@
          <div class="col-lg-6 col-md-10">
             <div class="section__header text-center">
                <span class="section__cate">Our Services</span>
-               <h3 class="section__title">Why We are The Best</h3>
-               <p>
-                  Necessitatibus sapiente ex earum omnis, commodi doloribus! Iste corrupti error maiores inventore.
-               </p>
+               <h3 class="section__title">Why Choose Us</h3>
+<p>
+   We fulfill your requirements with exceptional dedication and expertise, ensuring your complete satisfaction. Our relentless commitment to quality and innovation sets us apart from the rest.
+</p>
+
             </div>
          </div>
       </div>
@@ -196,7 +197,7 @@
                <div class="feature__item-cont">
                   <h6 class="feature__item-cont-title">Global</h6>
                   <p>
-                     We support a variety of the most popular digital currencies.
+                  We provide support for a wide range of popular digital currencies.
                   </p>
                </div>
             </div>
@@ -209,9 +210,8 @@
                <div class="feature__item-cont">
                   <a href="{{url('contact')}}"> <h6 class="feature__item-cont-title">Support</h6></a>
                   <p>
-                     We always provide the best 
-                     support to all our users.
-                  </p>
+   Our commitment is to consistently offer top-notch support to all our users.
+</p>
                </div>
             </div>
          </div>
@@ -223,8 +223,8 @@
                <div class="feature__item-cont">
                   <a href="{{url('price')}}"><h6 class="feature__item-cont-title">Currency</h6></a>
                   <p>
-                     Currency stored on our servers is covered by our insurance policy.
-                  </p>
+   Our insurance policy provides coverage for the currency stored on our servers.
+</p>
                </div>
             </div>
          </div>
@@ -236,8 +236,8 @@
                <div class="feature__item-cont">
                   <h6 class="feature__item-cont-title">Language</h6>
                   <p>
-                     This site can be easily translated into your own language.
-                  </p>
+   Our website can be effortlessly translated into your preferred language.
+</p>
                </div>
             </div>
          </div>
@@ -249,8 +249,8 @@
                <div class="feature__item-cont">
                   <h6 class="feature__item-cont-title">Secure</h6>
                   <p>
-                     Gives ultimate security with 2FA authentication with this system
-                  </p>
+   Enhances security through the use of 2FA authentication within this system.
+</p>
                </div>
             </div>
          </div>
@@ -262,8 +262,9 @@
                <div class="feature__item-cont">
                   <h6 class="feature__item-cont-title">Profitable</h6>
                   <p>
-                     You can get the golden opportunity to actually win a lot of profit here.
-                  </p>
+   This presents a golden opportunity for you to potentially achieve substantial profits.
+</p>
+
                </div>
             </div>
          </div>
@@ -291,10 +292,11 @@
          <div class="col-lg-6 col-md-10">
             <div class="section__header text-center text-white">
                <span class="section__cate text-white">How</span>
-               <h3 class="section__title text-white">How to Get Started</h3>
-               <p>
-                  Follow the steps to get into the system.
-               </p>
+               <h3 class="section__title text-white">Getting Started</h3>
+<p>
+   Follow these steps to begin using the system.
+</p>
+
             </div>
          </div>
       </div>
@@ -334,7 +336,7 @@
       </div>
    </div>
 </section>
-<div class="cmn--modal modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="cmn--modal modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog" role="document">
       <div class="modal-content">
          <div class="modal-header">
@@ -385,16 +387,16 @@
          </div>
       </div>
    </div>
-</div>
+</div> -->
 <section class="pricing-section pt-120 pb-60">
    <div class="container">
       <div class="row justify-content-center">
          <div class="col-lg-6 col-md-10">
             <div class="section__header text-center">
                <span class="section__cate">Pricing Plan</span>
-               <h3 class="section__title">Our Pricing Plan</h3>
+               <h3 class="section__title">Our Pricing Structure</h3>
                <p>
-                  Necessitatibus sapiente ex earum omnis, commodi doloribus! Iste corrupti error maiores inventore.
+                  We offer competitive pricing plans designed to meet your needs. Our commitment is to provide value and quality.
                </p>
             </div>
          </div>
@@ -559,10 +561,10 @@
          <div class="col-lg-6 col-md-10">
             <div class="section__header text-center">
                <span class="section__cate">Survey</span>
-               <h3 class="section__title">Our Top Survey Earners</h3>
-               <p>
-                  Necessitatibus sapiente ex earum omnis, commodi doloribus! Iste corrupti error maiores inventore.
-               </p>
+               <h3 class="section__title">Our Leading Survey Participants</h3>
+<p>
+   Meet some of our most accomplished survey earners, who have demonstrated remarkable dedication and success.
+</p>
             </div>
          </div>
       </div>
@@ -663,10 +665,11 @@
          <div class="col-lg-6 col-md-10">
             <div class="section__header text-center text-white">
                <span class="section__cate text-white">Counter</span>
-               <h3 class="section__title text-white">Our Strategy</h3>
-               <p>
-                  Necessitatibus sapiente ex earum omnis, commodi doloribus! Iste corrupti error maiores inventore.
-               </p>
+               <h3 class="section__title text-white">Our Approach</h3>
+<p>
+   Discover our strategic direction and the innovative solutions we offer to meet your needs.
+</p>
+
             </div>
          </div>
       </div>
@@ -737,10 +740,11 @@
          <div class="col-lg-6 col-md-10">
             <div class="section__header text-center">
                <span class="section__cate">Transaction</span>
-               <h3 class="section__title">Our Latest Transaction</h3>
-               <p>
-                  Necessitatibus sapiente ex earum omnis, commodi doloribus! Iste corrupti error maiores inventore.
-               </p>
+               <h3 class="section__title">Our Most Recent Transaction</h3>
+<p>
+   Explore the details of our latest transaction and learn more about our commitment to excellence.
+</p>
+
             </div>
          </div>
       </div>
@@ -896,10 +900,11 @@
          <div class="col-lg-6 col-md-10">
             <div class="section__header text-center">
                <span class="section__cate">Blog Posts</span>
-               <h3 class="section__title">Our Latest News And Tips</h3>
-               <p>
-                  Necessitatibus sapiente ex earum omnis, commodi doloribus! Iste corrupti error maiores inventore.
-               </p>
+               <h3 class="section__title"> Latest News and Valuable Tips</h3>
+<p>
+   Explore informative content and practical tips to enhance your experience.
+</p>
+
             </div>
          </div>
       </div>
@@ -1211,10 +1216,11 @@
          <div class="col-lg-6 col-md-10">
             <div class="section__header text-center">
                <span class="section__cate">Easy Payment</span>
-               <h3 class="section__title">Our Payment System For You</h3>
-               <p>
-                  Necessitatibus sapiente ex earum omnis, commodi doloribus! Iste corrupti error maiores inventore.
-               </p>
+               <h3 class="section__title">Our Custom Payment System</h3>
+<p>
+   Discover the convenience and flexibility of our tailored payment system designed with you in mind.
+</p>
+
             </div>
          </div>
       </div>

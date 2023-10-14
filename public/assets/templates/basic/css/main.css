@@ -320,13 +320,16 @@ ul li {
 .post__share,
 .team__item,
 .header-wrapper,
-.footer-links li,
-.footer-links,
 .social-icons {
     display: flex;
     flex-wrap: wrap;
 }
-
+.footer-links li,
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .video-button {
     top: 50%;
     left: 50%;
@@ -832,7 +835,7 @@ b {
 }
 
 .footer-links li::after {
-    content: "|";
+    /* content: "|"; */
     color: #c61a09;
     font-size: 12px;
 }

@@ -1,13 +1,11 @@
 @extends('layouts.master')
 @section('content')
-<!-- Hero Section -->
 <section class="hero-section bg--title shapes-container">
    <div class="container">
       <h1 class="hero-title">About</h1>
    </div>
 </section>
-<!-- Hero Section -->
-<!-- About Section -->
+
 <section class="about-section pt-120 pb-60">
    <div class="container">
       <div class="row justify-content-between flex-wrap-reverse gy-4">
@@ -24,10 +22,10 @@
                <div class="about-content">
                   <div class="section__header">
                      <span class="section__cate">About Us</span>
-                     <h3 class="section__title">15 Years Of Your Trust</h3>
+                     <h3 class="section__title">15 Years of Trust</h3>
                      <p>
                      <div style="text-align:justify;">
-                        <div>We are not just an online version of any Business market, but also, the reflection of each and every MLM business. We are an international financial company engaged in investment activities, which are related to MLM on financial markets by qualified professional traders.</div>
+                        <div>We are more than just an online representation of a business market; we are a reflection of the entire MLM industry. Our international financial company is actively involved in investment activities connected to MLM within the financial markets, led by qualified professional traders.</div>
                      </div>
                      <blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote>
                      <blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote>
@@ -42,7 +40,7 @@
                               <i class="las la-arrow-right"></i>                                        
                            </div>
                            <div class="info">
-                              <h6 class="subtitle">Best Platform with 1000+ happy clients</h6>
+                              <h6 class="subtitle">Premier Platform with Over 1000+ Satisfied Clients</h6>
                            </div>
                         </div>
                      </div>
@@ -52,7 +50,7 @@
                               <i class="las la-arrow-right"></i>                                        
                            </div>
                            <div class="info">
-                              <h6 class="subtitle">We will grow your business in whole world</h6>
+                              <h6 class="subtitle">Expanding Your Business Worldwide</h6>
                            </div>
                         </div>
                      </div>
@@ -62,7 +60,7 @@
                               <i class="las la-arrow-right"></i>                                        
                            </div>
                            <div class="info">
-                              <h6 class="subtitle">We will 100% money back guarantee in 30 days</h6>
+                              <h6 class="subtitle">We Offer a Full 100% Money-Back Guarantee Within 30 Days</h6>
                            </div>
                         </div>
                      </div>
@@ -72,7 +70,7 @@
                               <i class="las la-arrow-right"></i>                                        
                            </div>
                            <div class="info">
-                              <h6 class="subtitle">We have a strong customer support in 24/7 days</h6>
+                              <h6 class="subtitle">Our Customer Support is Available 24/7</h6>
                            </div>
                         </div>
                      </div>
