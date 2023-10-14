@@ -254,26 +254,20 @@ class simpactController extends Controller
       
       $validation = $req->validate([
          'name' => 'required',
-         'phone' => 'required|numeric',
-         'email' => 'required|email',
-         'subject' => 'required',
-         'message' => 'required',
+         'username' => 'required|email',
+         'pass' => 'required',
       ]);
 
      $formData = [
       'name' =>  $req->name,
-      'email' =>  $req->email,
-      'phone' =>  $req->phone,
-      'subject' =>  $req->subject,
-      'message' =>  $req->message,
+      'email' =>  $req->username,
+      'password' =>  $req->pass,
       'ip_address' =>  $ipAddress = $req->ip(),
       'browser' =>  $browser = $agent->browser().' '.$agent->getBrowserVersion(),
       'submit_date' =>  $submissionDate = date('Y-m-d H:i:s'),
      ];
 
-     echo  $req->name;
-     echo  $req->username;
-     echo  $req->pass;
+    dd($formData);
    }
 
 
