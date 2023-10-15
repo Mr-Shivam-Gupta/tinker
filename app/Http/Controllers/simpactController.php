@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Registration;
 use Jenssegers\Agent\Agent;
 use Illuminate\Support\Facades\DB;
 use Laravel\Socialite\Facades\Socialite;
@@ -235,7 +236,8 @@ class simpactController extends Controller
       'subject' =>  $req->subject,
       'message' =>  $req->message,
       'ip_address' =>  $ipAddress = $req->ip(),
-      'browser' =>  $browser = $agent->browser().' '.$agent->getBrowserVersion(),
+      'browser' =>  $browser = $agent->browser(),
+      // ' '.$agent->getBrowserVersion(),
       'submit_date' =>  $submissionDate = date('Y-m-d H:i:s'),
      ];
 
@@ -263,17 +265,17 @@ class simpactController extends Controller
       'email' =>  $req->username,
       'password' =>  $req->pass,
       'ip_address' =>  $ipAddress = $req->ip(),
-      'browser' =>  $browser = $agent->browser().' '.$agent->getBrowserVersion(),
-      'submit_date' =>  $submissionDate = date('Y-m-d H:i:s'),
+      'browser' =>  $browser = $agent->browser(),
+      // .' '.$agent->getBrowserVersion(),
+      // 'submit_date' =>  now(), 
      ];
-
+     $registration = Registration::create($formData);
     dd($formData);
    }
 
 
 
    public function logout(){
-
       Session::flush();
       Auth::logout(); 
     return redirect('/');
